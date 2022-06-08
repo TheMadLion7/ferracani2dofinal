@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+
+.logo img{
+    
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 90%;
+    padding: 20px;
+}
+.logo{
+    height: 40vh;
+    width: 100%;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+body {    
+    min-height: 70vh;
+    background: linear-gradient(black,transparent),url(/imagenes/mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  ul li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: black;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    transition: .5s;
+  }
+  
+  ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffa500;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffa500;
+  }
+  
+  ul li a:hover {
+    color: #ffa500;
+    box-shadow: 0 0 5px #ffa500;
+    text-shadow: 0 0 5px #ffa500;
+  }
+
+
+
+/*cards and main*/
+main{
+    min-height: 90vh;
+    background: linear-gradient(black,transparent),url(/imagenes/lion\ sunshine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+body{
+    background: white;
+}
+
+.container__card{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 50px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: black;
+    color: orange;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.body__card_back button{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back button:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
+
+.body__card_back a{
+    text-decoration: none;
+    color: white;
+}
+
+/* sections */
+
+/*BENEFITS SECTION*/
+#locations{
+min-height: 100vh;
+background: linear-gradient(rgba(0, 0, 0, 0.808),transparent), url(/imagenes/musicl7.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+}
+.locations-head{
+    width: 100%;
+    margin: auto;
+}
+.locations-head h2{
+    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 75px;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.aPlay{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+    text-decoration: none;
+    position: relative;
+    left: -600px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.locations-head h3{
+    padding: 20px 0rem 20px 20px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    
+}
+.moving-cloud-1{
+    left:2%;
+    z-index: 2;
+    opacity: 40%;
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+}
+
+.moving-cloud-2{
+    left: 40%;
+    bottom:20%;
+    z-index: 1;
+    opacity: 20%;
+    animation: cloudAnimation 2s infinite alternate ease-in-out;
+
+}
+
+@keyframes cloudAnimation{
+    from{
+    transform: translate(0%, -12%);
+}
+    to{
+transform: translate(0%, 0%);
+}
+
+}
+
+/*BENEFITS SECTION*/
+
+.benefits-head{
+    background: #27394e;
+    padding: 30px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.benefits-head h2{
+    font-size: 55px;
+    font-weight: lighter;
+}
+.benefits.benefits-head h3{
+    padding: 10px;
+}
+
+
+
+#contact{
+    min-height: 100vh;
+    background: linear-gradient(black,transparent), url(/imagenes/lionwalk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper{
+    background: rgba( 19, 28, 39, 0.8);
+    height: 50%;
+    width: 30%;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form-head {
+    text-align: center;
+    padding: 40px;
+}
+
+.name-form, .email-form, .textarea-form {
+padding: 30px;
+text-align: center;
+}
+
+.textarea-form{
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+}
+.form-wrapper label{
+    margin: 0px 30px;
+}
+.form-wrapper button{
+    width: 100%;
+    padding: 20px;
+    margin-top: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba( 19, 28, 39, 0.8);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.form-wrapper button:hover{
+    background: white;
+    color: #27394e;
+}
+
+.form-wrapper input{
+padding: 10px 30px;
+}

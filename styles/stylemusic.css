@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+
+.logo img{
+    
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 90%;
+  padding: 20px;
+}
+.logo{
+  height: 40vh;
+  width: 100%;
+  background: url(/imagenes/music.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+body {    
+    min-height: 10vh;
+    background: url(/imagenes/fogata.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 25px;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+ul li a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: none;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+  transition: .5s;
+}
+
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: none;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+ul li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px white;
+}
+
+ul li a:hover {
+  color: #ffa500;
+  text-shadow: 0 0 5px #ffa500;
+  /*transform: scale(1.1);*/
+}
+/*playlist skulls*/
+.skulls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 40px auto;
+  width: 170px;
+  height: 170px;
+  background-position: center;
+  background-size: 220px;
+  border-radius: 20px;
+  font-family: century gothic;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  flex-direction: row;
+  color: white;
+}
+
+.skulls:hover {
+  box-shadow:
+  0 0 50px #fff,
+  -10px 0 25px #f0f,
+  10px 0 25px #0ff;     
+  border-radius: 20px;
+}
+.skulls a{
+  text-decoration: none;
+  color: white;
+  font-family: century gothic;
+}
+.skulls:nth-child(1){
+  background: url(/imagenes/outside.jpg);
+  background-size: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+.skulls:nth-child(2){
+  background: url(/imagenes/inside.jpg);
+  background-size: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+  .skulls:nth-child(3){
+    background: url(/imagenes/beach.jpg);
+    background-size: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  .skulls:nth-child(4){
+    background: url(/imagenes/trancastyle.jpg);
+    background-size: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  .skulls:nth-child(5){
+    background: url(/imagenes/oldrock.jpg);
+    background-size: 390px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  .skulls:nth-child(6){
+    background: url(/imagenes/blackalbum.jpg);
+    background-size: 281px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  .skulls:nth-child(7){
+    background: url(/imagenes/whitealbum.jpg);
+    background-size: 440px;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  .skulls:nth-child(8){
+    background: url(/imagenes/king.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  .skulls:nth-child(9){
+    background: url(/imagenes/king.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }  .skulls:nth-child(10){
+    background: url(/imagenes/king.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }  .skulls:nth-child(11){
+    background: url(/imagenes/king.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }  .skulls:nth-child(12){
+    background: url(/imagenes/king.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }  .skulls:nth-child(13){
+    background: url(/imagenes/king.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calaveras{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 3;
+    
+  }
+  
+  
+
+
